@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AU DELA DU TERMINUS</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function porte(){
+            var audio = new Audio("sonnerie-portes-metro-01.mp3");
+            audio.play();
+        }
+        function metro(){
+            var audio = new Audio("ambiance.mp3");
+            audio.play();
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <img src="IMAGES/der_logo.png" alt="joueurs" class="logo" href="#room" onclick="metro()">
+        <nav>
+            <div class="desnav"><a href="">Accueil</a></div>
+            <div class="desnav">
+                <a href="#room" onclick="porte()">Salles</a>
+                <div class="submenu">
+                    <div><a href="#room1">Salle 1</a></div>
+                    <div><a href="#room2">Salle 2</a></div>
+                    <div><a href="#room3">Salle 3</a></div>
+                    <div><a href="#room4">Salle 4</a></div>
+                </div>
+            </div>
+            <div class="desnav"><a href="#footer">About</a></div>
+        </nav>
+        <button class="cta" onclick="window.location.href='#footer'">Contact</button>
+    </header>
+    
+    <main>
+        <article class="salles" id="room">
+            <div class="container">
+                <h1>AU DELA DU TERMINUS : <span>Voyage sans retour</span></h1>
+                <p>
+                    Et si un simple trajet en métro se terminais dans une station abandonné ? Vous vous êtes endormis avec des amis lors d'un trajet de métro, 
+                    votre réveil : le bruit fracassant de votre wagon déraillant contre un mur. Vous vous trouvez au delà du terminus, dans une station abandonné 
+                    de l'ancien métro parisien dans laquelle même la lumière se fait rare. Explorez les entrailles du métro a la recherche de la sortie et 
+                    découvrez les mystères de cette intriguante station. Mais attention, le temps vous est comptez ! En heurtant le mur, votre wagon à fragilisé les 
+                    vieilles fondations du métro et le plafond menace de s'écrouler sur vous a tout moment.
+                </p>
+                <div class="image-container">
+                    <img src="IMAGES/logo1_blanc.png" alt="joueurs" class="icones">
+                    <img src="IMAGES/logo2_blanc.png" alt="Loupe" class="icones">
+                    <img src="IMAGES/logo3_blanc.png" alt="Montre" class="icones">
+                </div>
+                <div class="container">
+                    <p>
+                        <span class="espace">3/6 joueurs</span>
+                        <span class="espace">Difficile</span>
+                        <span class="espace">60 minutes</span>
+                    </p>
+                </div>                
+            </div>
+        </article>
+
+        <article class="room" id="room1">
+            <div class="container">
+                <div class="texteG">
+                    <h3>Le wagon</h3>
+                    <p>
+                        Votre aventure démarre donc dans un wagon endommagé suite au crash de celui-ci. Dans le wagon, la lumière est faible et scintillante, mais un bouton de secours vous attire le regard. 
+                        En l’activant, il vous donnera une suite d’instructions qui vous permettront de sortir du wagon. Celui-ci vous permettra aussi, tout au long de l’aventure, d’entrer en contact, 
+                        lorsque le signal vous le permet, avec le poste de contrôle de la ville qui pourra vous aider lorsque vous en aurez le plus besoin. Après avoir réalisé les instructions du bouton 
+                        vous devrez alors être capable de sortir du wagon à l’aide d’une trappe sur le sol du wagon.
+                    </p>
+                </div>
+                <img src="IMAGES/wagon2.png" alt="" class="img">
+            </div>
+        </article>
+
+        <article class="room" id="room2">
+            <div class="container">
+                <img src="IMAGES/depot.jpg" alt="" class="img">
+                <div class="texteD">
+                    <h3>La station abandonnée</h3>
+                    <p>
+                        Vous vous trouvez alors dans une station abandonnée, où seule la lumière scintillante du wagon et les lampes que vous avez trouvées précédemment dans le wagon éclaire votre chemin. 
+                        Lors de votre exploration vous trouverez une carte partiellement déchirée qui indique une voie d'évacuation, votre objectif devient alors de trouver le reste de la carte qui vous indiquera le moyen de sortir. 
+                        Pour cela, vous devrez parvenir à ouvrir la porte de la salle suivante qui est verrouillée par un digicode à quatre chiffres. 
+                        Afin de trouver ces chiffres vous devrez chercher des chiffres dissimulés partout dans la station (sur le mur, le plafond…) et les rentrer dans un ordre précis que l’on retrouve dans un plan du métro. 
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <article class="room" id="room3">
+            <div class="container">
+                <div class="texteG">
+                    <h3>L'ancienne salle de repos</h3>
+                    <p>
+                        Alors que vous ouvrez la porte vous découvrez ce qui était autrefois une salle de repos abandonnée pour les anciens employés de la station. 
+                        La pièce est recouverte de poussière et de moisissure, vous y retrouver la partie manquante de la carte trouvée précédemment qui vous indique une issue bloquée par une porte vers un dépôt de wagons. 
+                        On retrouve dans la salle une table avec une veste dans un piteux état. Contre le mur, un comptoir contenant une plaque à induction et un micro-ondes, avec une série de barres et de points gravés sur le côté. 
+                        Un tiroir dans le comptoir est verrouillé par un cadenas à code, de même qu'une malle dans un coin de la pièce. A vous de résoudre les nombreux mystères de cette pièce qui vous permettront éventuellement de trouver un moyen d’accéder au dépôt.
+                    </p>
+                </div>
+                <img src="IMAGES/repos.png" alt="" class="img">
+            </div>
+        </article>
+
+        <article class="room" id="room4">
+            <div class="container">
+                <img src="IMAGES/depot_wagons.jpg" alt="" class="img">
+                <div class="texteD">
+                    <h3>Le dépot de wagons</h3>
+                    <p>
+                        Maintenant que vous avez atteint le dépôt, il vous suffira de parvenir à faire démarrer un des wagons pour fuir la station. 
+                        Pour cela, plusieurs choses à faire : premièrement trouver un moyen de rétablir le courant dans le dépôt, ensuite il vous faudra récupérer les clés du wagon se trouvant à l’intérieur de celui-ci à l’aide d’un aimant. 
+                        Pour finir il vous restera à trouver la bonne combinaison des interrupteurs se trouvant sur le tableau de bord du wagon pour le démarrer, sachant que cette fameuse combinaison se trouve dans le wagon où vous avez démarré votre aventure. 
+                        Enfin, il vous restera à tous vous réunir dans le wagon pour fuir la station avant que le temps vienne à sa fin. 
+
+                    </p>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer id="footer">
+        <div class="footer-left">
+            <h3>Escape <span>Game</span></h3>
+            <p class="footer-links">
+                <a href="#">Home</a> |
+                <a href="#">Salles</a> |
+                <a href="#">About</a> |
+                <a href="#">Contact</a>
+            </p>
+            <p class="copyright">Copyright © 2023 All rights reserved</p>
+        </div>
+        <div class="contact">
+            <div>
+                <span class="icon">&#127968;</span>
+                <p><span>Montpellier</span>France</p>
+            </div>
+            <div>
+                <span class="icon">&#9742;</span>
+                <p>+33 4 29 ** ** 00</p>
+            </div>
+            <div>
+                <span class="icon">&#9993;</span>
+                <p><a href="">escape.terminus@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="about">
+            <p class="footer-company-about">
+                <span>Qui sommes-nous ?</span>
+                Nous sommes un groupe d'étudiants en BUT Informatique a l'IUT de Montpellier, qui réalisons un projet de création, immagination d'escape game.
+            </p>
+            <div class="footer-icons">
+                <a href="#"><img src="IMAGES/facebook.png" alt=""></a>
+                <a href="#"><img src="IMAGES/instagram.png" alt=""></a>
+                <a href="#"><img src="IMAGES/twitter.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

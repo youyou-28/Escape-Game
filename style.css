@@ -1,0 +1,374 @@
+@font-face {
+    font-family: 'Insomnia';
+    src: url('fonts/h1/Insomnia.ttf');
+}
+
+@font-face {
+    font-family: 'WreckedShip';
+    src: url('fonts/h1/WreckedShip.otf');
+}
+
+* {
+    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+    
+}
+
+main {
+    margin: 100px 90px 0 90px;
+}
+
+p {
+    text-align: justify;
+}
+
+img {
+    width: 450px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+
+/*HEADER*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    background-color: #232826;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.logo {
+position: relative;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+}
+
+img.logo{
+    width: 85px;
+    height: 50px;
+    margin-left: 21px;
+    margin-right: 21px;
+}
+
+header .desnav, a, button {
+    font-weight: 500;
+    font-size: 20px;
+    color: #24252A;
+    text-decoration: none;
+}
+
+header .logo {
+    cursor: pointer;
+    color: white;
+}
+
+header button {
+    padding: 9px 25px;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+header button:hover {
+    background-color: #E0AC1C;
+}
+
+nav {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+nav .desnav {
+    display: flex;
+    position: relative;
+    width: 113px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav a {
+    padding: 0 10px;
+    color: white;
+}
+
+nav .submenu {
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    background-color: #232826;
+    display: none;
+    padding: 14px 0;
+}
+
+nav .submenu div {
+    height: 30px;
+    width: 100px;
+}
+
+nav div:hover .submenu{
+    display: block;
+}
+
+nav a:hover {
+    color: #E0AC1C;
+}
+
+/** BODY **/
+
+body {
+    background-image: url('IMAGES/fond5.png');
+    background-size: cover; 
+    font-size : 17px;
+    font-family: Verdana,'Comic Sans', cursive;
+    color: white;
+}
+
+h3 {
+    font-size : 25px;
+    font-family: 'WreckedShip',Bookman, URW Bookman L, serif;
+    color: white;
+
+}
+
+h1{
+   font-family: 'Insomnia', Verdana, Geneva, Tahoma, sans-serif;
+   color: white;
+}
+
+
+body h1 span {
+    color: #e0ac1c;
+}
+
+
+/** SALLES **/
+.salles {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%; 
+    height: 85vh;
+    text-align: center; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+}
+
+.salles .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+
+.salles h2 {
+    font-size: 24px;
+}
+
+.icones {
+    position: static;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+}
+
+img.icones {
+    width: 60px;
+    height: 45px;
+    margin-left: 21px;
+    margin-right: 21px;
+}
+
+.espace {
+    margin-right:16px;
+    margin-left:16px;
+}
+
+
+
+
+.salles p {
+    margin: 20px 0;
+}
+
+.salles .image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+   
+ 
+}
+
+/** ARTICLE ROOM **/
+.room {
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+.room .img {
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.room .container {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+
+/** SALLE 1 **/
+.room .container .texteG {
+    margin-right: 20px;
+}
+
+/** SALLE 2 **/
+.room .container .texteD {
+    margin-left: 20px;
+}
+
+
+
+/** FOOTER **/
+footer {
+    background-color: #232826;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+}
+
+footer .footer-left, footer .contact, footer .about {
+    display: inline-block;
+    vertical-align: top;
+}
+
+footer .footer-left {
+    width: 30%;
+}
+
+footer h3 {
+    font-family: 'Insomnia', Verdana;
+    color: #ffffff;
+    margin: 0;
+}
+
+footer h3 span {
+    color: #e0ac1c;
+}
+
+footer .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+}
+
+footer .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+footer .copyright {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+footer .contact {
+    width: 35%;
+}
+
+footer .contact p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+}
+
+footer .contact p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+footer .contact p a {
+    color: #e0ac1c;
+    text-decoration: none;
+    
+}
+
+footer .about {
+    width: 30%;
+}
+
+footer .about p {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+footer .about p span {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+footer .footer-icons {
+    margin-top: 25px;
+}
+
+footer .footer-icons a {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+footer .footer-icons img {
+    margin-top: 2px;
+    width: 40px;
+    height: 40px;
+}
+
+footer .footer-icons a:hover {
+    background-color: #E0AC1C;
+}
+
+.footer-links a:hover {
+    color: #E0AC1C;
+}
+
